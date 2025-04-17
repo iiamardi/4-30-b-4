@@ -71,6 +71,8 @@ footer{
    padding:0px 50px;
    position: absolute;
    left: 0px;
+   margin-top: -250px;
+   padding-top: -10px;
 }
 .nav-item  {
 
@@ -133,4 +135,181 @@ div nav ul li {
 .login-container button a{
   color: white;
   text-decoration: none;
+}
+#section-one{
+    background-color: #4c7fc8;
+    
+}
+#section-one .text-content{
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-bottom:70px;
+}
+#section-one .text-content h2{
+    font-size: 80px;
+    color: white;
+}
+#section-one .text-content p{
+    font-size: 25px;
+    width: 450px;
+    color: #ff9d42;
+}
+#section-one main{
+display: flex;
+    flex-direction: row;
+}
+#section-one .image-container{
+    height: 400px;
+    margin-top: 60px;
+    padding-left: 100px;
+    display: flex;
+
+}
+section{
+	display: flex;
+	flex-direction: column;
+	margin: 0px 0px;
+	padding: 0;
+    
+}
+.containeer{
+	display: flex;
+	flex-direction: row;
+    background-color: #4c7fc8;
+    padding-top:70px;
+   
+    
+}
+section h1{
+	margin-left: 40px;
+
+}
+.pc-container{
+	background: white;
+	padding: 10px;
+	margin: 10px 40px	;
+	display: flex;
+	flex-direction: column;
+	border-radius: 29px;
+}
+.pc-logo{
+	height: 200px;
+}
+.pc-text-con h2{
+	font-size: 25px;
+	color: #1e2b50;
+}
+.pc-text-con p{
+	font-size: 17px;
+	color: #1e2b50;
+}
+.pc-text-con button{
+	font-family:Verdana	;
+	padding: 8px 20px;
+	background-color: #1e2b50;
+	border-radius: 20px;
+	border: none;
+	text-decoration: none;
+    width: 100%;
+    transition: background 0.7s ease-in-out;
+}
+.pc-text-con button:hover{
+    background-color: #4c7fc8;
+}
+.pc-text-con button a{
+	text-decoration: none;
+	color: white;
+}
+#divs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4c7fc8;
+    margin-top: -40px;
+    margin-bottom: -60px;
+}
+#divs .title h1{
+    padding-top:70px;
+    padding-bottom: 50px;
+    font-size: 3em;
+}
+#divs .divs{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:
+     space-between ;
+     gap: 100px;
+}
+#divs .divs .box1{
+    height: 350px;
+    background-color: rgb(255, 213, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border-top-right-radius: 45%;
+    border-top-left-radius: 45%;
+    gap: 30px;
+    text-align: center;
+    padding: 10px 15px;
+}
+#divs .divs .box1 h2{
+    color: white;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 2.3em;
+}
+#divs .divs .box1 h5{
+    color: #1e2b50;
+    font-size: 1.7em;
+}
+#divs .divs .box2{
+    height: 350px;
+    background-color:rgb(9, 170, 119);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border-top-right-radius: 45%;
+    border-top-left-radius: 45%;
+    gap: 30px;
+    text-align: center;
+    padding: 10px 15px;
+}
+#divs .divs .box2 h2{
+    color: white;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 2.3em;
+}
+#divs .divs .box2 h5{
+    color: #1e2b50;
+    font-size: 1.7em;
+}
+#divs .divs .box3{
+    height: 350px;
+    background-color:#ff9d42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border-top-right-radius: 45%;
+    border-top-left-radius: 45%;
+    gap: 30px;
+    text-align: center;
+    padding: 10px 15px;
+}
+#divs .divs .box3 h2{
+    color: white;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 2.3em;
+}
+#divs .divs .box3 h5{
+    color: #1e2b50;
+    font-size: 1.7em;
 }
