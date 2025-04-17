@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gamer PC Info</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  
+  
+  <style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Funnel+Display:wght@300..800&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+PhagsPa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Funnel+Display:wght@300..800&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+PhagsPa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*Ubuntu*/
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Funnel+Display:wght@300..800&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+PhagsPa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*Lilita One*/
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1f2a3a;
+      color: #fff;
+    }
+
+    .section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      border: 3px solid #007BFF;
+      box-shadow: 0 0 15px #007BFF88;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .text h2 {
+      font-size: 30px;
+      color: #ffa500;
+      margin-bottom: 15px;
+    }
+
+    .text p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 12px 30px;
+      margin: 10px;
+      background-color: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .buttons a:hover {
+      background-color: #ffffff;
+      color: #007BFF;
+    }
+    header {
+  background-color: #203162;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+header .logo-container img {
+   height: 100px;
+
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  display: inline-block;
+  position: relative;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: Ubuntu;
+}
+header nav ul  li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.6px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+header nav ul  li:hover::after {
+  width: 100%;
+}
+#bar {
+  display: none;
+}
+header .login-container  .login, .signup {
+
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+  
+  
+}
+
+footer{
+  background-color: #203162;
+  color: white;
+  width: 100vw;
+   margin-left: 0px;
+   padding:0px 50px;
+   position: absolute;
+   left: 0px;
+   margin-top: -250px;
+   padding-top: -10px;
+}
+.nav-item  {
+
+  color: white;
+
+}
+div nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+}
+.nav-link   {
+  color: white;
+}
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 5px;
+  }
+
+  #bar {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.login-container .login button a{
+  color: white;
+  text-decoration: none;
+}
+.login, a{
+  color: white;
+  text-decoration: none;
+}
+.signup a{
+  color: white;
+  text-decoration: none;
+}
+}
+  </style>
+</head>
+<body>
+  <header>
+    <i class="bi bi-caret-right-fill --bs-body-color" id="bar" ></i>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Logo" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="deliana.html">Home</a></li>
+        <li><a href="findPC.html">Find PC</a></li>
+        <li><a href="buildpc.html">Build PC</a></li>
+        <li><a href="recomended.html">Recomendet</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+      <div class="login-container">
+        <button class="btn btn-outline-primary me-2 login"><a  href="form.html" style="color: white;text-decoration: none;">Log In</a></button>
+        <button class="btn btn-primary signup"><a href="form.html" style="color: white;text-decoration: none;">Sign Up</a></button>
+      </div>
+ 
+  </header>
+   
+  <section> 
+  <div class="section">
+    <img src="https://pixelz.cc/wp-content/uploads/2018/08/esports-gaming-pc-uhd-4k-wallpaper.jpg" alt="PC" />
+    <div class="text">
+      <h2><i class="fas fa-gamepad"></i> PC Pathway</h2>
+      <p>In a world full of confusing specs, endless models, and overwhelming ads, choosing the right computer can quickly become a headache. But not anymore. Our platform is built for you—for anyone who needs a new PC but isn't quite sure which one to get.</p>
+      <p>Just tell us a few simple things: what you’ll use your PC for (gaming, work, design, school, video editing, or just everyday use), your budget, and any specific preferences you might have. We'll analyze the info and suggest the best options tailored to your needs.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="https://maximumsettings.com/wp-content/uploads/2023/06/gamingpc-scaled.jpg" alt="Build PC">
+    <div class="text">
+      <h2><i class="fas fa-tools"></i> Build Your PC</h2>
+      <p>🔧 Build Your Own PC — The Power to Choose Every Part</p>
+      <p>Pick every part you want: CPUs, GPUs, RAM, SSDs, motherboards, and more. Our system filters out incompatible choices and helps you build a setup that works perfectly.</p>
+      <p>📊 See real-time pricing and performance as you build.
+      💡 Get tips and suggestions without being overwhelmed by tech jargon.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="https://www.radiumpcs.com/cdn/shop/files/CSMphoto1.png?v=1731888666" alt="Find PC">
+    <div class="text">
+      <h2><i class="fas fa-search"></i> Find a PC</h2>
+      <p>🎯 Tell Us Your Budget & Games — We’ll Find the Right PC for You</p>
+      <p>Just give us your budget and the games you want to play. We look at system requirements and your goals to recommend the best build—whether it's for Fortnite, Valorant, or Cyberpunk 2077.</p>
+      <p>✔️ No tech skills needed
+      ✔️ Smart matching based on performance and price
+      ✔️ Options for pre-built and custom PCs</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="https://www.radiumpcs.com/cdn/shop/files/dragonlol.png?v=1707866506" alt="Gaming Setup">
+    <div class="text">
+      <h2><i class="fas fa-fire"></i> Performance Ready</h2>
+      <p>Our mission is to help you make the right decision, save money, and get the most value from your investment. We do the research so you don’t have to.</p>
+      <p>Whether you're looking for smooth gameplay, high FPS, or just the best value for your money—we’ve got your back with optimized suggestions and trustworthy picks.</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <a href="#">Skip</a>
+    <a href="#">Stay</a>
+  </div>
+</section>
+
+<div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+        <img src="img/logo.png" alt="Logo" class="logo mb-3" style="width: 200px; height: auto;">
+       
+      </a>
+      <p class=" ">© 2025</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Pc Pathway</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a target="_blank" href="mailto:PcPathway@mail.com" class="nav-link p-0  ">PcPathway@mail.com</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="phoneto:PcPathway@mail.com" class="nav-link p-0  ">+38345234192</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="policy.html" class="nav-link p-0  ">Policy</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="policy" class="nav-link p-0  ">About</a></li>
+         
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Developers</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a target="_blank" href="#" class="nav-link p-0  ">Ardi Tahiri</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="#" class="nav-link p-0  ">Ermali Brahimi</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="#" class="nav-link p-0  ">Lindi Fejzullahu</a></li>
+        <li class="nav-item mb-2"><a  target="_blank" href="#" class="nav-link p-0  ">Deljana Emini</a></li>
+        
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Digital School</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a target="_blank"href="https://shkolladigjitale.com/" class="nav-link p-0  ">Digital School</a></li>
+        <li class="nav-item mb-2"><a  target="_blank"href="ferizaj@shkolladigjitale.com" class="nav-link p-0  ">ferizaj@shkolladigjitale.com</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="phoneto:044 415 300" class="nav-link p-0  ">044 415 300</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="https://www.google.com/maps/dir//Shkolla+Digjitale+Ferizaj,+Rruga,+p.n+D%C3%ABshmor%C3%ABt+e+Kombit,+Ferizaj+70000/@42.3698,21.1511,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x13547f474082088d:0x386d7b98bdcde3a4!2m2!1d21.1477329!2d42.3725353?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNjM5SAFQAw%3D%3D" class="nav-link p-0  ">Rr. Dëshmorët e Kombit p.n, Ferizaj</a></li>
+        
+      </ul>
+    </div>
+  </footer>
+</div>
+<script>
+  const bar = document.getElementById('bar');
+  const nav = document.querySelector('nav');
+
+  bar.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  
+</body>
+</html>

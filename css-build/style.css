@@ -1,0 +1,9 @@
+.part-image {
+  max-height: 150px;
+  object-fit: contain;
+}
+.login-container button a{
+  color: white;
+  text-decoration: none;
+}
+  

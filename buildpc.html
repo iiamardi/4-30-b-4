@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ndërto PC-n Tënd</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css-build/style.css">
+   <link rel="stylesheet" href="css-findPC/style.css">
+</head>
+<body>
+  <header>
+    <i class="bi bi-caret-right-fill --bs-body-color" id="bar" ></i>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Logo" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="deliana.html">Home</a></li>
+        <li><a href="findPC.html">Find PC</a></li>
+        <li><a href="buildpc.html">Build PC</a></li>
+        <li><a href="recomended.html">Recomendet</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+      <div class="login-container">
+        <button class="btn btn-outline-primary me-2 login"><a href="form.html">Log In</a></button>
+        <button class="btn btn-primary signup"><a href="form.html">Sign Up</a></button>
+      </div>
+ 
+  </header>
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Build PC</h2>
+    <form id="pcBuilderForm" class="row g-3">
+      <div class="col-md-6">
+        <label for="case" class="form-label">Case:</label>
+        <select id="case" class="form-select">
+          <option value="">Zgjidh...</option>
+          <option value="NZXT H510">NZXT H510</option>
+          <option value="Corsair 4000D">Corsair 4000D</option>
+          <option value="Cooler Master NR600">Cooler Master NR600</option>
+          <option value="Lian Li PC-O11">Lian Li PC-O11</option>
+          <option value="Fractal Design Meshify C">Fractal Design Meshify C</option>
+          <option value="Phanteks Eclipse P400A">Phanteks Eclipse P400A</option>
+          <option value="Be Quiet! Pure Base 500DX">Be Quiet! Pure Base 500DX</option>
+          <option value="Thermaltake V250">Thermaltake V250</option>
+          <option value="DeepCool Macube 310">DeepCool Macube 310</option>
+          <option value="Cooler Master HAF 500">Cooler Master HAF 500</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="motherboard" class="form-label">Motherboard:</label>
+        <select id="motherboard" class="form-select">
+          <option value="">Zgjidh...</option>
+          <option value="ASUS B550">ASUS B550</option>
+          <option value="MSI Z690">MSI Z690</option>
+          <option value="Gigabyte B660M">Gigabyte B660M</option>
+          <option value="ASRock X570">ASRock X570</option>
+          <option value="MSI B450 Tomahawk">MSI B450 Tomahawk</option>
+          <option value="ASUS ROG Strix B550-F">ASUS ROG Strix B550-F</option>
+          <option value="Gigabyte Z790 Aorus Elite">Gigabyte Z790 Aorus Elite</option>
+          <option value="MSI MAG B550M Mortar">MSI MAG B550M Mortar</option>
+          <option value="ASRock B660M Steel Legend">ASRock B660M Steel Legend</option>
+          <option value="ASUS Prime Z790-P">ASUS Prime Z790-P</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="cpu" class="form-label">CPU:</label>
+        <select id="cpu" class="form-select">
+          <option value="">Zgjidh...</option>
+          <option value="Intel i3 12100F">Intel i3 12100F</option>
+          <option value="Intel i5 12400F">Intel i5 12400F</option>
+          <option value="Intel i7 12700K">Intel i7 12700K</option>
+          <option value="Ryzen 5 5600X">Ryzen 5 5600X</option>
+          <option value="Ryzen 7 5800X">Ryzen 7 5800X</option>
+          <option value="Ryzen 9 5900X">Ryzen 9 5900X</option>
+          <option value="Intel i9 13900K">Intel i9 13900K</option>
+          <option value="Ryzen 7 7700X">Ryzen 7 7700X</option>
+          <option value="Ryzen 9 7950X">Ryzen 9 7950X</option>
+          <option value="Intel i5 13400F">Intel i5 13400F</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="ram" class="form-label">RAM:</label>
+        <select id="ram" class="form-select">
+          <option value="">Zgjidh...</option>
+          <option value="16GB DDR4">16GB DDR4</option>
+          <option value="32GB DDR4">32GB DDR4</option>
+          <option value="16GB DDR5">16GB DDR5</option>
+          <option value="32GB DDR5">32GB DDR5</option>
+          <option value="8GB DDR4">8GB DDR4</option>
+          <option value="64GB DDR4">64GB DDR4</option>
+          <option value="64GB DDR5">64GB DDR5</option>
+          <option value="Corsair Vengeance 32GB">Corsair Vengeance 32GB</option>
+          <option value="Kingston Fury Beast 16GB">Kingston Fury Beast 16GB</option>
+          <option value="G.Skill Trident Z RGB 32GB">G.Skill Trident Z RGB 32GB</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="gpu" class="form-label">GPU:</label>
+        <select id="gpu" class="form-select">
+          <option value="">Zgjidh...</option>
+          <option value="RTX 3060">RTX 3060</option>
+          <option value="RX 6700 XT">RX 6700 XT</option>
+          <option value="RTX 3070">RTX 3070</option>
+          <option value="RTX 3080">RTX 3080</option>
+          <option value="RX 6800 XT">RX 6800 XT</option>
+          <option value="RTX 4060">RTX 4060</option>
+          <option value="RTX 4070 Ti">RTX 4070 Ti</option>
+          <option value="RX 7900 XTX">RX 7900 XTX</option>
+          <option value="Intel Arc A770">Intel Arc A770</option>
+          <option value="RTX 4090">RTX 4090</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="ssd" class="form-label">SSD:</label>
+        <select id="ssd" class="form-select">
+          <option value="">Zgjidh...</option>
+          <option value="500GB NVMe">500GB NVMe</option>
+          <option value="1TB SATA">1TB SATA</option>
+          <option value="1TB NVMe">1TB NVMe</option>
+          <option value="2TB NVMe">2TB NVMe</option>
+          <option value="2TB SATA">2TB SATA</option>
+          <option value="500GB SATA">500GB SATA</option>
+          <option value="Kingston NV2 1TB">Kingston NV2 1TB</option>
+          <option value="Samsung 980 Pro 1TB">Samsung 980 Pro 1TB</option>
+          <option value="Crucial P3 1TB">Crucial P3 1TB</option>
+          <option value="WD Blue 1TB">WD Blue 1TB</option>
+        </select>
+      </div>
+      <div class="col-12 text-center mt-4">
+        <button type="submit" class="btn btn-success">Shfaq Konfigurimin</button>
+      </div>
+    </form>
+    <div id="result" class="row mt-5"></div>
+  </div>
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+        <img src="../projekti grupor/img/logo.png" alt="Logo" class="logo mb-3" style="width: 200px; height: auto;">
+       
+      </a>
+      <p class=" ">© 2025</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Pc Pathway</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a target="_blank" href="mailto:PcPathway@mail.com" class="nav-link p-0  ">PcPathway@mail.com</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="phoneto:PcPathway@mail.com" class="nav-link p-0  ">+38345234192</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="policy.html" class="nav-link p-0  ">Policy</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="index.html" class="nav-link p-0  ">About</a></li>
+         
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Developers</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a target="_blank" href="#" class="nav-link p-0  ">Ardi Tahiri</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="#" class="nav-link p-0  ">Ermali Brahimi</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="#" class="nav-link p-0  ">Lindi Fejzullahu</a></li>
+        <li class="nav-item mb-2"><a  target="_blank" href="#" class="nav-link p-0  ">Deljana Emini</a></li>
+        
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Digital School</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a target="_blank"href="https://shkolladigjitale.com/" class="nav-link p-0  ">Digital School</a></li>
+        <li class="nav-item mb-2"><a  target="_blank"href="ferizaj@shkolladigjitale.com" class="nav-link p-0  ">ferizaj@shkolladigjitale.com</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="phoneto:044 415 300" class="nav-link p-0  ">044 415 300</a></li>
+        <li class="nav-item mb-2"><a target="_blank" href="https://www.google.com/maps/dir//Shkolla+Digjitale+Ferizaj,+Rruga,+p.n+D%C3%ABshmor%C3%ABt+e+Kombit,+Ferizaj+70000/@42.3698,21.1511,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x13547f474082088d:0x386d7b98bdcde3a4!2m2!1d21.1477329!2d42.3725353?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNjM5SAFQAw%3D%3D" class="nav-link p-0  ">Rr. Dëshmorët e Kombit p.n, Ferizaj</a></li>
+        
+      </ul>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="jsbuild/script.js">
+  
+  </script>
+</body>
+</html>
